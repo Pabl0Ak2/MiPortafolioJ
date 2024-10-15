@@ -41,5 +41,8 @@ export class PageCardsComponent {
     window.location.href = 'https://github.com/Pabl0Ak2/LisTareasFull';
   }
 
+  redirectToGithub9() {
+    window.location.href = 'https://github.com/Pabl0Ak2/ChatBot';
+  }
 
 }
