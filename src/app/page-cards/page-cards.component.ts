@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { VideoPlayerComponent } from '../video-player/video-player.component';
 
 @Component({
   selector: 'app-page-cards',
   standalone: true,
-  imports: [],
+  imports: [VideoPlayerComponent],
   templateUrl: './page-cards.component.html',
   styleUrl: './page-cards.component.css'
 })
@@ -35,5 +36,10 @@ export class PageCardsComponent {
   redirectToGithub7() {
     window.location.href = 'https://github.com/Pabl0Ak2/Admin-Presupuestos';
   }
+
+  redirectToGithub8() {
+    window.location.href = 'https://github.com/Pabl0Ak2/LisTareasFull';
+  }
+
 
 }

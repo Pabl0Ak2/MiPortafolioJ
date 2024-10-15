@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PageCardsComponent } from '../page-cards/page-cards.component';
+import { VideoPlayerComponent } from '../video-player/video-player.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,8 @@ import { PageCardsComponent } from '../page-cards/page-cards.component';
   imports: [
     RouterOutlet, 
     CommonModule,
-    PageCardsComponent
+    PageCardsComponent,
+    VideoPlayerComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
