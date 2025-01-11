@@ -3,6 +3,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PageCardsComponent } from '../page-cards/page-cards.component';
 import { VideoPlayerComponent } from '../video-player/video-player.component';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { ServicesComponent } from '../services/services.component';
+import { HomeComponent } from '../home/home.component';
+import { AboutComponent } from '../about/about.component';
+import { PortfolioComponent } from '../portfolio/portfolio.component';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +17,13 @@ import { VideoPlayerComponent } from '../video-player/video-player.component';
     RouterOutlet, 
     CommonModule,
     PageCardsComponent,
-    VideoPlayerComponent
+    VideoPlayerComponent,
+    NavbarComponent,
+    ServicesComponent,
+    HomeComponent,
+    AboutComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
@@ -60,4 +72,9 @@ export default class DashboardComponent {
     this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
   }
   
+  isNavbarOpen = false;
+
+  toggleNavbar() {
+    this.isNavbarOpen = !this.isNavbarOpen;
+  }
 }

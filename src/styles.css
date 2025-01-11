@@ -7,9 +7,7 @@
   height: 100vh;
   background-image: linear-gradient(to left bottom, #44093b, #401043, #3a164b, #321c52, #262159, #24215a, #21225a, #1e225b, #281d57, #2f1851, #35124c, #3a0b46);
 } */
-body {
-    background-color: #e8e8e8;
-  }
+
  
  @keyframes slide-down {
    0% {
